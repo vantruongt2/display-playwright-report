@@ -1,0 +1,9 @@
+name: "Display the playwright test report in the Run summary"
+description: "A GitHub Action to display the playwright test report in the Run summary"
+inputs:
+  report-file:
+    description: "The path to the playwright test report json file"
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
